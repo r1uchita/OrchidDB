@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor_pane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Insert_Data">
+   <children>
+      <Label layoutX="182.0" layoutY="106.0" prefHeight="35.0" prefWidth="147.0" text="Table Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Table Name" />
+         </tooltip>
+      </Label>
+      <JFXComboBox fx:id="table_names" layoutX="313.0" layoutY="100.0" prefHeight="35.0" prefWidth="289.0">
+         <tooltip>
+            <Tooltip text="Select Table Name" />
+         </tooltip></JFXComboBox>
+      <JFXButton fx:id="insert_button" buttonType="RAISED" layoutX="345.0" layoutY="625.0" onAction="#Build_query" prefHeight="44.0" prefWidth="183.0" styleClass="green" stylesheets="@button_css.css" text="Insert Record">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="22.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Click to Insert Record " />
+         </tooltip>
+      </JFXButton>
+      <JFXToggleButton layoutX="720.0" layoutY="7.0" prefHeight="60.0" prefWidth="52.0">
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip></JFXToggleButton>
+      <VBox fx:id="vbox" layoutX="59.0" layoutY="195.0" prefHeight="407.0" prefWidth="793.0" spacing="30.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor_pane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Menu_Bar">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="32.0" prefWidth="973.0">
+        <menus>
+          <Menu id="ddl" fx:id="ddl_menu" mnemonicParsing="false" text="DDL">
+            <items>
+              <MenuItem id="create_table" fx:id="create_table" mnemonicParsing="false" onAction="#call_create_table" text="Create Table" />
+                  <MenuItem id="alter_table" fx:id="alter_table" mnemonicParsing="false" onAction="#call_alter_table" text="Alter Table" />
+                  <MenuItem id="rename_table" fx:id="rename_table" mnemonicParsing="false" onAction="#call_rename_table" text="Rename Table" />
+                  <MenuItem id="drop_table" fx:id="drop_table" mnemonicParsing="false" onAction="#call_drop_table" text="Drop Table" />
+                  <MenuItem id="view_table" fx:id="view_table" mnemonicParsing="false" onAction="#call_view_table" text="View  Table" />
+            </items>
+          </Menu>
+          <Menu fx:id="dml_menu" mnemonicParsing="false" text="DML">
+            <items>
+              <MenuItem fx:id="select_data" mnemonicParsing="false" onAction="#call_fetch_records" text="Select Data" />
+                  <MenuItem fx:id="update_data" mnemonicParsing="false" onAction="#call_update_records" text="Update Records" />
+                  <MenuItem fx:id="delete_data" mnemonicParsing="false" onAction="#call_delete_records" text="Delete Records" />
+                  <MenuItem fx:id="insert_data" mnemonicParsing="false" onAction="#call_insert_records" text="Insert Records" />
+            </items>
+          </Menu>
+            <Menu fx:id="dcl_menu" mnemonicParsing="false" text="DCL">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Export" />
+                  <MenuItem mnemonicParsing="false" text="Import" />
+               </items>
+            </Menu>
+            <Menu fx:id="about_us_menu" mnemonicParsing="false" onAction="#call_about_us" text="About Us">
+               <items>
+                  <MenuItem fx:id="about_devloper" mnemonicParsing="false" onAction="#call_about_us" text="About Developers" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

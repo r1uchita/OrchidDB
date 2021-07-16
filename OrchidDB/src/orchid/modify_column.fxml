@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" stylesheets="@button_css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Modify_column">
+   <children>
+      <Label layoutX="192.0" layoutY="152.0" prefHeight="38.0" prefWidth="139.0" text="Table  Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="223.0" prefHeight="38.0" prefWidth="109.0" text="Column Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="296.0" prefHeight="38.0" prefWidth="89.0" text="Data Type">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="212.0" layoutY="377.0" prefHeight="38.0" prefWidth="89.0" text="Size">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="table_names" layoutX="368.0" layoutY="140.0" prefHeight="31.0" prefWidth="174.0">
+         <tooltip>
+            <Tooltip text="Select Table Name" />
+         </tooltip></JFXComboBox>
+      <JFXToggleButton layoutX="652.0" layoutY="14.0" prefHeight="60.0" prefWidth="63.0">
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip></JFXToggleButton>
+      <JFXComboBox fx:id="column_names" layoutX="368.0" layoutY="211.0" prefHeight="31.0" prefWidth="174.0">
+         <tooltip>
+            <Tooltip text="Select Column from Table" />
+         </tooltip></JFXComboBox>
+      <JFXComboBox fx:id="data_types" layoutX="368.0" layoutY="275.0" prefHeight="31.0" prefWidth="174.0">
+         <tooltip>
+            <Tooltip text="Selct DataType" />
+         </tooltip></JFXComboBox>
+      <JFXTextField fx:id="size" layoutX="370.0" layoutY="356.0">
+         <tooltip>
+            <Tooltip text="Enter Length For DatatType" />
+         </tooltip></JFXTextField>
+      <JFXButton fx:id="modify_column" buttonType="RAISED" layoutX="291.0" layoutY="445.0" onAction="#modify_column" prefHeight="69.0" prefWidth="260.0" styleClass="green" text="Modify   Column">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="22.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Click For Modify Column" />
+         </tooltip>
+      </JFXButton>
+   </children>
+</AnchorPane>

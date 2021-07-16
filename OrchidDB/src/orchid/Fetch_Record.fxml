@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Fetch_Record">
+   <children>
+      <Label layoutX="233.0" layoutY="105.0" prefHeight="60.0" prefWidth="123.0" text="Table Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Table Name" />
+         </tooltip>
+      </Label>
+      <JFXComboBox fx:id="table_names" layoutX="370.0" layoutY="105.0" prefHeight="40.0" prefWidth="257.0">
+         <tooltip>
+            <Tooltip text="Select Table Name" />
+         </tooltip></JFXComboBox>
+      <JFXToggleButton layoutX="791.0" layoutY="8.0" prefHeight="60.0" prefWidth="65.0">
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip></JFXToggleButton>
+      <TableView fx:id="table_data" layoutX="27.0" layoutY="224.0" prefHeight="336.0" prefWidth="816.0">
+         <tooltip>
+            <Tooltip text="Depiction Of Table Data" />
+         </tooltip></TableView>
+   </children>
+</AnchorPane>

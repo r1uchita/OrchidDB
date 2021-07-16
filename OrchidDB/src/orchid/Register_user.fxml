@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0 " xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Register_user">
+   <children>
+      <JFXTextField focusColor="#2448b5" layoutX="180.0" layoutY="104.0" prefHeight="29.0" prefWidth="180.0" promptText="Enter Username" unFocusColor="#bf1a1a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXToggleButton layoutX="441.0" layoutY="14.0" prefHeight="58.0" prefWidth="55.0" />
+      <JFXComboBox focusColor="#2747a8" layoutX="72.0" layoutY="307.0" prefHeight="25.0" prefWidth="131.0" promptText="Select Privileges" unFocusColor="#c92323" />
+      <JFXComboBox focusColor="#1f46bc" layoutX="346.0" layoutY="317.0" prefHeight="25.0" prefWidth="119.0" unFocusColor="#c92222" />
+      <Label layoutX="260.0" layoutY="310.0" text="ON">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="241.0" layoutY="397.0" stylesheets="@StyleSheet.css" text="Register" textFill="#cd1c1c">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField focusColor="#193dab" layoutX="180.0" layoutY="165.0" prefHeight="25.0" prefWidth="180.0" promptText="************" unFocusColor="#cd2828" />
+      <JFXPasswordField focusColor="#2247b5" layoutX="180.0" layoutY="228.0" prefHeight="25.0" prefWidth="180.0" promptText="Conform Password" unFocusColor="#bf1818" />
+      <Label layoutX="58.0" layoutY="43.0" text="Register" textFill="#bf1717">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

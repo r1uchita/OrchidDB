@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Login">
+    <children>
+      <JFXTextField fx:id="user_name_textfield" layoutX="323.0" layoutY="324.0" prefHeight="39.0" prefWidth="333.0" promptText="Enter User Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="User Name" />
+         </tooltip></JFXTextField>
+      <JFXPasswordField fx:id="password_textfield" layoutX="323.0" layoutY="423.0" prefHeight="31.0" prefWidth="333.0" promptText="Enter Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Password " />
+         </tooltip>
+      </JFXPasswordField>
+      <JFXButton fx:id="connect_button" alignment="CENTER" buttonType="RAISED" layoutX="671.0" layoutY="621.0" onAction="#connect_me" prefHeight="30.0" prefWidth="134.0" ripplerFill="BLACK" stylesheets="@StyleSheet.css" text="Connect" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="trans-btn-white-border" />
+            <String fx:value="pink_button" />
+         </styleClass>
+         <tooltip>
+            <Tooltip text="Press for Conncetion" />
+         </tooltip>
+      </JFXButton>
+      <JFXToggleButton fx:id="them_changer" layoutX="765.0" layoutY="17.0" onAction="#theam_change" prefHeight="70.0" prefWidth="102.0" AnchorPane.leftAnchor="765.0" AnchorPane.rightAnchor="33.0">
+         <stylesheets>
+            <URL value="@style.css" />
+            <URL value="@dark_them.css" />
+         </stylesheets>
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip></JFXToggleButton>
+      <Label fx:id="sun_label" layoutX="711.0" layoutY="25.0" prefHeight="54.0" prefWidth="54.0" AnchorPane.topAnchor="25.0">
+         <tooltip>
+            <Tooltip text="Light mode" />
+         </tooltip></Label>
+      <Label fx:id="moon_label" layoutX="841.0" layoutY="68.0" prefHeight="54.0" prefWidth="54.0" AnchorPane.bottomAnchor="578.0" AnchorPane.leftAnchor="825.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="52.0">
+         <tooltip>
+            <Tooltip text="Dark Mode" />
+         </tooltip></Label>
+      <ImageView fitHeight="300.0" fitWidth="351.0" layoutX="314.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ORCHIDB.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="captch_textfield" layoutX="324.0" layoutY="530.0" prefHeight="48.0" prefWidth="333.0" promptText="Enter Captcha">
+         <tooltip>
+            <Tooltip text="Enter captcha" />
+         </tooltip></JFXTextField>
+      <JFXButton fx:id="reload_captcha" layoutX="704.0" layoutY="519.0" onAction="#load_captcha" prefHeight="70.0" prefWidth="172.0" text="Reload Captcha">
+         <tooltip>
+            <Tooltip text="press for Reload Captcha" />
+         </tooltip></JFXButton>
+      <Text fx:id="captcha_label" layoutX="53.0" layoutY="563.0" scaleY="3.0" strikethrough="true" stroke="#ab3e3e" strokeType="OUTSIDE" strokeWidth="0.0" text="hello" wrappingWidth="209.99999570846558">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="24.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

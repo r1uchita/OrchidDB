@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.ViewTable">
+   <children>
+      <Label layoutX="276.0" layoutY="104.0" prefHeight="31.0" prefWidth="104.0" text="Select Tables">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <JFXToggleButton layoutX="916.0" layoutY="7.0" prefHeight="60.0" prefWidth="84.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip>
+      </JFXToggleButton>
+      <JFXComboBox fx:id="table_names" layoutX="450.0" layoutY="88.0" prefHeight="31.0" prefWidth="237.0" stylesheets="@button_css.css">
+         <tooltip>
+            <Tooltip text="Select Table Name" />
+         </tooltip></JFXComboBox>
+      <TableView fx:id="table_structure" layoutX="68.0" layoutY="203.0" prefHeight="432.0" prefWidth="890.0">
+         <tooltip>
+            <Tooltip text="Depicition Of Table Structure" />
+         </tooltip></TableView>
+   </children>
+</AnchorPane>

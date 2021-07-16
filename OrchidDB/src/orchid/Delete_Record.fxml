@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Delete_Record">
+   <children>
+      <JFXToggleButton layoutX="705.0" layoutY="14.0" prefHeight="60.0" prefWidth="81.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip>
+      </JFXToggleButton>
+      <JFXComboBox fx:id="table_names" layoutX="52.0" layoutY="97.0" prefHeight="40.0" prefWidth="272.0" promptText="Select Table">
+         <tooltip>
+            <Tooltip text="Drag For Table Names" />
+         </tooltip></JFXComboBox>
+      <TableView fx:id="table_data" layoutX="42.0" layoutY="189.0" prefHeight="411.0" prefWidth="816.0">
+         <tooltip>
+            <Tooltip text="Depiction Of Tables" />
+         </tooltip></TableView>
+      <JFXButton fx:id="delete_button" buttonType="RAISED" layoutX="388.0" layoutY="622.0" onAction="#record_delete" prefHeight="31.0" prefWidth="196.0" styleClass="green" stylesheets="@button_css.css" text="Delete ">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Select Record And Delet" />
+         </tooltip></JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="808.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Update_data_new">
+   <children>
+      <VBox fx:id="vbox" layoutX="55.0" layoutY="58.0" prefHeight="655.0" prefWidth="853.0" spacing="30.0" />
+      <JFXButton fx:id="update_data_btn" buttonType="RAISED" layoutX="381.0" layoutY="732.0" onAction="#update_values" prefHeight="45.0" prefWidth="186.0" styleClass="green" stylesheets="@button_css.css" text="Update">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="22.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Click for updating Row" />
+         </tooltip></JFXButton>
+   </children>
+</AnchorPane>

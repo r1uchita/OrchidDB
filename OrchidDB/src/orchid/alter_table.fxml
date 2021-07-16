@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor_pane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Alter_table">
+   <children>
+      <Hyperlink fx:id="add_column_link" layoutX="180.0" layoutY="175.0" onAction="#call_add" text="Add Column">
+         <font>
+            <Font name="Times New Roman" size="28.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Link For Adding New Column" />
+         </tooltip>
+      </Hyperlink>
+      <Hyperlink fx:id="rename_column_link" layoutX="178.0" layoutY="237.0" onAction="#call_rename" text="Rename  Column">
+         <font>
+            <Font name="Times New Roman" size="28.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Link For  Rename Column" />
+         </tooltip>
+      </Hyperlink>
+      <Hyperlink fx:id="drop_column_link" layoutX="178.0" layoutY="307.0" onAction="#call_drop" text="Drop Column">
+         <font>
+            <Font name="Times New Roman" size="28.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Link For Deleting Column" />
+         </tooltip>
+      </Hyperlink>
+      <Hyperlink fx:id="modify_column_link" layoutX="178.0" layoutY="377.0" onAction="#call_modify" text="Modify Column">
+         <font>
+            <Font name="Times New Roman" size="28.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Link For Modify Existing Column" />
+         </tooltip>
+      </Hyperlink>
+      <Hyperlink fx:id="rename_tabel_link" layoutX="172.0" layoutY="454.0" onAction="#call_rename_table" text="Rename Table">
+         <font>
+            <Font name="Times New Roman" size="28.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Link For  Rename Column" />
+         </tooltip>
+      </Hyperlink>
+      <JFXToggleButton layoutX="616.0" prefHeight="60.0" prefWidth="70.0" text="ToggleButton">
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip></JFXToggleButton>
+   </children>
+</AnchorPane>

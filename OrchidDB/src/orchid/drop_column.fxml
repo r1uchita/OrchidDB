@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Drop_column">
+   <children>
+      <Label layoutX="118.0" layoutY="187.0" prefHeight="41.0" prefWidth="174.0" text="Table  Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </Label>
+      <Label layoutX="122.0" layoutY="250.0" prefHeight="48.0" prefWidth="166.0" text="Column Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </Label>
+      <JFXToggleButton layoutX="616.0" prefHeight="60.0" prefWidth="73.0">
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip></JFXToggleButton>
+      <JFXComboBox fx:id="table_names" layoutX="317.0" layoutY="176.0" prefHeight="31.0" prefWidth="190.0">
+         <tooltip>
+            <Tooltip text="Select Table to be modify" />
+         </tooltip></JFXComboBox>
+      <JFXComboBox fx:id="column_names" layoutX="317.0" layoutY="243.0" prefHeight="31.0" prefWidth="190.0">
+         <tooltip>
+            <Tooltip text="Select Column To Delete" />
+         </tooltip></JFXComboBox>
+      <JFXButton fx:id="drop_table" buttonType="RAISED" layoutX="295.0" layoutY="358.0" onAction="#drop_column" prefHeight="48.0" prefWidth="141.0" styleClass="green" stylesheets="@button_css.css" text="Drop">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Droping Specified Column" />
+         </tooltip>
+      </JFXButton>
+   </children>
+</AnchorPane>

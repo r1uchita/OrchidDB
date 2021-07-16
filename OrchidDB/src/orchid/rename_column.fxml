@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Rename_column">
+   <children>
+      <Label layoutX="180.0" layoutY="126.0" prefHeight="44.0" prefWidth="139.0" text="Table  Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="224.0" prefHeight="44.0" prefWidth="139.0" text="Column Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="326.0" prefHeight="44.0" prefWidth="89.0" text="New Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <JFXToggleButton layoutX="616.0" layoutY="6.0" prefHeight="60.0" prefWidth="65.0">
+         <tooltip>
+            <Tooltip text="EThem Changer" />
+         </tooltip></JFXToggleButton>
+      <JFXComboBox fx:id="table_names" layoutX="348.0" layoutY="132.0" prefHeight="31.0" prefWidth="216.0">
+         <tooltip>
+            <Tooltip text="Select Existing Table Name" />
+         </tooltip></JFXComboBox>
+      <JFXComboBox fx:id="column_names" layoutX="348.0" layoutY="218.0" prefHeight="31.0" prefWidth="216.0">
+         <tooltip>
+            <Tooltip text="Select Existing Column" />
+         </tooltip></JFXComboBox>
+      <JFXTextField fx:id="new_column_name" layoutX="341.0" layoutY="305.0" prefHeight="31.0" prefWidth="242.0">
+         <tooltip>
+            <Tooltip text="Enter New Column Name" />
+         </tooltip></JFXTextField>
+      <JFXButton fx:id="rename_button" buttonType="RAISED" layoutX="262.0" layoutY="440.0" onAction="#rename_column" styleClass="green" stylesheets="@button_css.css" text="Rename">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Click for Renameing column" />
+         </tooltip>
+      </JFXButton>
+      <JFXButton fx:id="cancel_btn" buttonType="RAISED" layoutX="530.0" layoutY="440.0" onAction="#reset_data" styleClass="red" stylesheets="@button_css.css" text="Cancel">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Cancel Column Rename Process" />
+         </tooltip>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Update_Record">
+   <children>
+      <JFXToggleButton layoutX="794.0" layoutY="14.0" prefHeight="60.0" prefWidth="92.0" text="ToggleButton">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip>
+      </JFXToggleButton>
+      <JFXComboBox fx:id="table_names" layoutX="69.0" layoutY="87.0" prefHeight="36.0" prefWidth="295.0" promptText="select table name">
+         <tooltip>
+            <Tooltip text="Select Table Name" />
+         </tooltip></JFXComboBox>
+      <TableView fx:id="table_data" layoutX="34.0" layoutY="176.0" prefHeight="456.0" prefWidth="832.0">
+         <tooltip>
+            <Tooltip text="Displaying Table Data" />
+         </tooltip></TableView>
+      <JFXButton fx:id="update_btn" buttonType="RAISED" layoutX="405.0" layoutY="642.0" onAction="#update_records" prefHeight="31.0" prefWidth="153.0" styleClass="green" stylesheets="@button_css.css" text="Update" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="22.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Select Record and Update" />
+         </tooltip></JFXButton>
+   </children>
+</AnchorPane>

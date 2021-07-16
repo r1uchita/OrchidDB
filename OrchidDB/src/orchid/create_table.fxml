@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Create_table">
+   <children>
+      <Label layoutX="50.0" layoutY="116.0" prefHeight="24.0" prefWidth="94.0" text="Table Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView layoutX="37.0" layoutY="216.0" prefHeight="292.0" prefWidth="814.0">
+        <columns>
+          <TableColumn prefWidth="151.0" text="Column Name" />
+          <TableColumn prefWidth="86.0" text="Type" />
+            <TableColumn prefWidth="94.0" text="Size" />
+            <TableColumn prefWidth="142.0" text="NOT NULL" />
+            <TableColumn prefWidth="175.0" text="Auto_Increment" />
+            <TableColumn prefWidth="165.0" text="Primary_Key" />
+        </columns>
+      </TableView>
+      <JFXTextField layoutX="170.0" layoutY="113.0" prefHeight="31.0" prefWidth="681.0" />
+      <JFXToggleButton layoutX="809.0" prefHeight="60.0" prefWidth="76.0" />
+      <JFXButton layoutX="37.0" layoutY="593.0" text="Add Column">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="622.0" layoutY="593.0" text="Create Table">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="761.0" layoutY="593.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

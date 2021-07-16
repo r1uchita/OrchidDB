@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Add_column">
+   <children>
+      <Label layoutX="124.0" layoutY="115.0" prefHeight="41.0" prefWidth="168.0" text="Name of  the Table ">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Table Name" />
+         </tooltip>
+      </Label>
+      <Label layoutX="130.0" layoutY="171.0" prefHeight="53.0" prefWidth="137.0" text="Column Name">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Column Name" />
+         </tooltip>
+      </Label>
+      <Label layoutX="137.0" layoutY="241.0" prefHeight="41.0" prefWidth="122.0" text="Data Type">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Data Type" />
+         </tooltip>
+      </Label>
+      <JFXComboBox fx:id="table_names" editable="true" layoutX="315.0" layoutY="109.0" prefHeight="31.0" prefWidth="259.0">
+         <tooltip>
+            <Tooltip text="Select Table" />
+         </tooltip></JFXComboBox>
+      <JFXTextField fx:id="column_name_textfield" layoutX="315.0" layoutY="166.0" prefHeight="31.0" prefWidth="259.0" promptText="Pls Enter new Column name">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Add Column Name" />
+         </tooltip></JFXTextField>
+      <JFXComboBox fx:id="datatype" layoutX="315.0" layoutY="235.0" prefHeight="31.0" prefWidth="259.0">
+         <tooltip>
+            <Tooltip text="Select Datatype" />
+         </tooltip></JFXComboBox>
+      <JFXCheckBox fx:id="pk" layoutX="145.0" layoutY="340.0" text="Primary Key">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Check for Primary Key" />
+         </tooltip></JFXCheckBox>
+      <JFXCheckBox fx:id="nn" layoutX="301.0" layoutY="340.0" text="Not Null">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Check for Not Null" />
+         </tooltip></JFXCheckBox>
+      <JFXCheckBox fx:id="ai" layoutX="450.0" layoutY="340.0" prefHeight="21.0" prefWidth="149.0" text="Auto__Increment">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Check For Auto Increment" />
+         </tooltip></JFXCheckBox>
+      <JFXToggleButton layoutX="589.0" layoutY="22.0" prefHeight="60.0" prefWidth="71.0">
+         <tooltip>
+            <Tooltip text="Drag for Them Change" />
+         </tooltip></JFXToggleButton>
+      <JFXButton fx:id="add_column_button" buttonType="RAISED" layoutX="190.0" layoutY="444.0" onAction="#add_column" prefHeight="41.0" prefWidth="122.0" styleClass="green" stylesheets="@button_css.css" text="Add Column">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Click for New Column" />
+         </tooltip>
+      </JFXButton>
+      <JFXButton fx:id="reset_btn" buttonType="RAISED" layoutX="472.0" layoutY="444.0" onAction="#reset_data" prefHeight="41.0" prefWidth="159.0" stylesheets="@button_css.css" text="Reset">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="red" />
+            <String fx:value="red" />
+         </styleClass>
+         <tooltip>
+            <Tooltip text="Click For Clear Data" />
+         </tooltip>
+      </JFXButton>
+   </children>
+</AnchorPane>

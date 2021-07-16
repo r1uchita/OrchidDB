@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" styleClass="Parent" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Login_register">
+   <children>
+      <Pane layoutX="25.0" layoutY="114.0" prefHeight="487.0" prefWidth="1148.0" styleClass="pane" stylesheets="@StyleSheet.css">
+         <children>
+            <Label layoutX="840.0" layoutY="138.0" prefHeight="38.0" prefWidth="202.0" style="-fx-background-color: k;" text=" Have Account  ?" textFill="#fcf8f8" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="161.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="263.0" text="Dummy Text hbfdhfh       bbcbxcb   vjcvjvvncjvjnncvm  ncnvncv" textFill="WHITE" wrapText="true" />
+            <JFXButton fx:id="sign_up" layoutX="100.0" layoutY="244.0" onAction="#open_register" prefHeight="47.0" prefWidth="148.0" styleClass="trans-btn-white-border" text="Sign Up" textFill="WHITE" wrapText="true" />
+            <Label layoutX="73.0" layoutY="107.0" prefHeight="38.0" prefWidth="202.0" style="-fx-background-color: k;" text="Don't Have Account ?" textFill="#fcf8f8" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="809.0" layoutY="187.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="263.0" text="Dummy Text hbfdhfh       bbcbxcb   vjcvjvvncjvjnncvm  ncnvncv" textFill="WHITE" wrapText="true" />
+            <JFXButton fx:id="sign_in" layoutX="879.0" layoutY="261.0" onAction="#open_login" prefHeight="47.0" prefWidth="148.0" styleClass="trans-btn-white-border" text="Sign In" textFill="WHITE" wrapText="true" />
+            <VBox fx:id="v_box" layoutX="584.0" layoutY="-45.0" prefHeight="579.0" prefWidth="543.0" styleClass="white-pane" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="699.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="111.0" layoutY="237.0" prefHeight="56.0" prefWidth="258.0" text="Developed  By:" textFill="#2ac410">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="24.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Developers Name" />
+         </tooltip>
+      </Label>
+      <Label layoutX="316.0" layoutY="305.0" prefHeight="56.0" prefWidth="321.0" text="Awar Rupa   (03-B)" textAlignment="CENTER" textFill="#1a069a">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="506.0" prefHeight="56.0" prefWidth="321.0" text="Chippa Pratibha   (11-B)" textAlignment="CENTER" textFill="#1a069a">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="378.0" prefHeight="56.0" prefWidth="321.0" text="Awar Deepak   (02-B)" textAlignment="CENTER" textFill="#1a069a">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="434.0" prefHeight="56.0" prefWidth="321.0" text="Bhandari Ruchita  (06-B)" textAlignment="CENTER" textFill="#1a069a">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="clg_logo" fitHeight="213.0" fitWidth="258.0" layoutX="695.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@unnamed.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

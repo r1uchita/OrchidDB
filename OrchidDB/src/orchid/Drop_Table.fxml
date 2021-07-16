@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orchid.Drop_Table">
+   <children>
+      <JFXToggleButton fx:id="them_changer" layoutX="703.0" layoutY="14.0" prefHeight="60.0" prefWidth="83.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Them Changer" />
+         </tooltip>
+      </JFXToggleButton>
+      <Label layoutX="190.0" layoutY="206.0" prefHeight="46.0" prefWidth="93.0" text="Select">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+      </Label>
+      <JFXComboBox fx:id="table_names" layoutX="283.0" layoutY="192.0" prefHeight="46.0" prefWidth="286.0">
+         <tooltip>
+            <Tooltip text="Select Table Name" />
+         </tooltip></JFXComboBox>
+      <JFXCheckBox fx:id="verification_checkbox" layoutX="190.0" layoutY="300.0" prefHeight="60.0" prefWidth="356.0" text="Do You Want To Continue">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Check if wan't Drop" />
+         </tooltip>
+      </JFXCheckBox>
+      <JFXButton fx:id="drop_table" buttonType="RAISED" layoutX="300.0" layoutY="414.0" onAction="#drop_table" prefHeight="60.0" prefWidth="201.0" styleClass="green" stylesheets="@button_css.css" text="Drop">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="22.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Click to Drop" />
+         </tooltip>
+      </JFXButton>
+   </children>
+</AnchorPane>
